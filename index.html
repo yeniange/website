@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Have a nice bread!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<script type="text/javascript" src="./js/js.js"></script>
+</head>
+<body>
+
+	<!-- navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Daily Bread</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+				  	<li class="dropdown">
+				        <a class="dropdown-toggle" data-toggle="dropdown" href="">Bakery List
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				          <li><a href="./page2.html">국내 베이커리</a></li>
+				          <li><a href="./page2.html#external">해외 베이커리</a></li>
+				        </ul>
+				    </li>
+					<li><a href="./page3.html">Delivery Service</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+  <!-- Masthead -->
+  <header class="masthead text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="mb-5">Daily Bread</h1>
+          <p class="mb-6">the bread you need to live</p>
+          <input onkeyup="filter()" type="text" id="filterText" class="search__input" id="value" placeholder="베이커리  이름">
+          <ul class="filterUL">
+          	<li>오드랑베이커리</li>
+          	<li>궁전제과</li>
+          	<li>옵스</li>
+          	<li>성심당</li>
+          	<li>삼송빵집</li>
+          	<li>돌체테리아</li>
+          	<li>라뒤레</li>
+          	<li>마담콴</li>
+          	<li>룬크로와상</li>
+          	<li>에싸베이글</li>
+          	<li>뜨르들로</li>
+          	<li>포트넘앤메이슨</li>
+          	<li>아우어베이커리</li>
+          	<li>맛나제과</li>
+          	<li>어글리베이커리</li>
+          	<li>돌체테리아</li>
+          	<li>망넛이네</li>
+          	<li>뚜떰즈업</li>
+          	<li>웨스트진베이커리</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+	<!-- bakery list -->
+	<div class="bakery-list">
+		<h2 class="bakery-list-title">Bakery List</h2>
+		<div class="container bg-1">
+			<div class="row">
+				<div class="col-lg-3">
+	 				<div class="internal-image">
+	 					<a href="./page2.html"><h3>국내 베이커리</h3></a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+	 				<div class="external-image">
+	 					<a href="./page2.html#external"><h3>해외 베이커리</h3></a>
+	 				</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	<br><br><hr>
+	
+	<!-- delivery service -->
+	<div class="delivery-service">
+		<h2 class="delivery-service-title">Delivery Service</h2>
+		<div class="container-fluid bg-4">
+			<div class="row">
+				<div class="col-lg-4">
+	 				<a href="./page3.html#matnabakery"><img src="img/ugly.jpg" alt="Image"></a><br>
+					<p>어글리 베이커리</p>
+					<a id="address" href="http://www.instagram.com/uglybakery">instagram.com/uglybakery</a>
+				</div>
+				<div class="col-lg-4">
+					<a href="./page3.html#uglybakery"><img src="img/dolche.jpg" alt="Image"></a><br>
+					<p>돌체테리아</p>
+					<a id="address" href="http://www.xn--pq1bl5io8ktoh91f.com/">돌체테리아.com</a>
+				</div>
+				<div class="col-lg-4">
+					<a href="./page3.html#twothumbsup"><img src="img/westjin.jpg" alt="Image"></a><br>
+					<p>웨스트진베이커리</p>
+					<a id="address" href="http://www.westgin.com/">westgin.com</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br><br><br>
+	
+	<div class="information">
+	<br><br>
+		<div class="col-sm-5">
+			<h4><img src="https://image.flaticon.com/icons/svg/1490/1490651.svg"> Daily Bread </h4>
+			<p>Have a nice bread!</p>
+			<p><span class="glyphicon glyphicon-user"></span> 김예은</p>
+			<p><span class="glyphicon glyphicon-phone"></span> 01089036147</p>
+			<p><span class="glyphicon glyphicon-envelope"></span> yeniange@naver.com</p>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br>
+	</div>
+	
+
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	jQuery(function($) {
+		$(document).ready(function() {
+		$(".filterUL li").hide();
+		$('#filterText').keyup(function(event) {
+		   var val = $(this).val();
+		   if (val == "") {
+		       $('.filterUL li').show();
+		   } else {
+		       $('.filterUL li').hide();
+		       $(".filterUL li:contains('"+val+"')").show();
+		   }
+		   });
+		});
+	});
+	</script>
+</body>
+</html>

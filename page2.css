@@ -1,0 +1,60 @@
+body {
+  font-family: 'Verdana', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3
+ {
+  font-family: 'Verdana', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+.nav-tabs li a {
+	color: #363636;	
+}
+.navbar {
+	margin-bottom: 0;
+	/* background-color: #e6e6e6; */
+	border: 0;
+	font-size: 15px !important;
+	letter-spacing: 1px;
+	opacity: 0.9;
+}
+.navbar li a, .navbar .navbar-brand {
+	color: #6e6e6e !important;
+}
+
+#internal-title h2{
+	text-align: center;
+	margin: 5vw 0 3vw 0;
+	color: #4a4a4a;
+}
+#external-title h2{
+	text-align: center;
+	margin: 5vw 0 3vw 0;
+	color: #4a4a4a;
+}
+.internal-bakery img{
+	width: 450px;
+ 	height: 300px; 
+ 	margin-left: 45px;
+}
+.internal-bakery h4 {
+	margin-left: 50px;
+}
+.internal-bakery span {
+	margin-left: 15vw;
+}
+.internal-bakery p {
+	margin-left: 3vw;
+}
+
+.information {
+	background-color: #e3e3e3;
+}
+.information h4, p {
+	margin-left: 10vw;
+}
+.information img {
+	width: 25px;
+}
+

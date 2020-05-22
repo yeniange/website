@@ -1,0 +1,163 @@
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nav-tabs li a {
+	color: #363636;	
+}
+.navbar {
+	margin-bottom: 0;
+	/* background-color: #e6e6e6; */
+	border: 0;
+	font-size: 15px !important;
+	letter-spacing: 1px;
+	opacity: 0.9;
+}
+.navbar li a, .navbar .navbar-brand {
+	color: #6e6e6e !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+header.masthead {
+  position: relative;
+ /*  background-color: #343a40; */
+  background: url("../img/bruno-thethe-6-_5StuyCHg-unsplash.jpg") no-repeat center center;
+  height: 25vw;
+  background-size: cover;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  filter: grayscale(50%);
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 5rem;
+    margin: 5rem 0 0 0;
+  }
+  header.masthead p {
+  	color: #ededed;
+  	margin-left: 0px;
+  }
+}
+
+.search__input {
+        width: 50%;
+        padding: 15px 27px;
+        background-color: transparent;
+        font-size: 0.8vw;
+        color: #ededed;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 2vw 2vw;
+        background-position:95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+		margin: 2vw 0vw;
+}
+.filterUL{
+	color: #ededed;
+	list-style: none;
+	margin-left: -27vw;
+	margin-top: -1.5vw;
+	opacity: none;
+}
+
+.bakery-list-title {
+	margin: 3vw 5vw 2vw 10vw;
+	color: #363636;
+}
+
+.internal-image {
+	position: relative;
+	height: 300px;
+	width: 665px;
+	background-image: url("../img/internal.jpg");
+	margin: 0vw -8vw;
+}
+
+.external-image {
+	position: relative;
+	height: 300px;
+	width: 665px;
+	background-image: url("../img/external.jpg");
+	margin-left: 20vw;
+}
+
+
+.col-lg-3 h3{
+     position: absolute;
+     top:45%;
+     left:50%;
+     transform: translate(-50%, -50%);                                                                   
+     font-size:3.5rem;
+     z-index: 3;
+     text-align: center;
+     color: #ededed;
+     margin: 10px;
+}
+
+.delivery-service-title {
+	margin: 3vw 5vw 2vw 10vw;
+	color: #363636;
+}
+
+.container-fluid img {
+	width: 450px;
+ 	height: 300px; 
+ 	margin-left: 3vw;
+
+}
+
+.container-fluid p {
+	font-size: 2rem;
+	margin-top: -10px;
+	margin-left: 4vw;
+}
+
+a:link { color: #363636; text-decoration: none;}
+a:visited { color: #363636; text-decoration: none;}
+a:hover { color: #363636; text-decoration: none;}
+a {
+	display: block;
+}
+
+#address {
+	margin-left: 4vw;
+}
+
+.information {
+	background-color: #e3e3e3;
+}
+.information h4, p {
+	margin-left: 10vw;
+}
+.information img {
+	width: 25px;
+}
+
